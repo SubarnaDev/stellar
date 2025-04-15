@@ -28,6 +28,7 @@ nav{
     /* border: 10px solid black; */
     background-color: black;
     height: 5rem;
+    padding: 0 3rem;
 }
 .logo h1{
     color: white;
@@ -40,21 +41,29 @@ nav{
 .profile{
     display: flex;
     flex-direction: row;
+    margin: 0 0 0 1rem;
 }
 .menu{
     display: flex;
     flex-direction: row;
     color: white;
+    align-items: center;
 }
 .menu a{
-    margin: 1rem;
+    margin: 1.5rem;
     text-decoration: none;
     color: white;
+    font-size: 1.01rem;
+    font-weight: 450;
 }
-.name{
+#name{
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+#name p{
+    width: 100%;
+    text-align: left;
 }
 .lang{
     margin: 1rem;
