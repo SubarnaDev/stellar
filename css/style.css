@@ -71,6 +71,64 @@ nav{
 .main div{
     justify-content: center;
 }
-.right div{
-    align-items: right;
+.page1{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.left h1{
+    font-size: 2.5rem;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.right h1{
+    font-size: 2.5rem;
+}
+.main{
+     border-radius: 50%;
+     border: 2px solid black;
+     box-shadow: -2px 2px 2px #287a65;
+     height: 35rem;
+     width: 35rem;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     justify-content: center;
+     align-items: center;
+}
+.main p{
+    margin: 8%;
+    
+}
+#para{
+    width: 22rem;
+    text-align: center;
+}
+.high {
+    font-size: 3rem;
+}
+.details{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+}
+.bank{
+    border: 5px solid red;
+    /* height: 4rem;  */
+    /* width: 4rem;  */
 }
