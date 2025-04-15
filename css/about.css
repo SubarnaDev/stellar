@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+font{
+    color: #00fec0;
+    letter-spacing: 6px;
+}
+
+.para-small{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.para-big{
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+
+.about{
+    margin: 7rem 12rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    padding: 2.5rem 0 0 0; 
+}
+
+#text{
+    line-height: 2.2rem;
+    letter-spacing: 1.25px;
+}
+
+button{
+    height: 4rem;
+    width: 12rem;
+    color: #fff;
+    background-color: #0f5241;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+.design{
+    margin: 0 0 0 1.5rem;
+}
+
+.des1{
+    height: 12rem;
+    width: 36rem;
+    background-color: #287a65;
+    border-radius: 30px;
+    margin: 0 0 3rem 0;
+}
+
+.des2{
+    height: 20rem;
+    width: 36rem;
+    background-color: #00221a;
+    border-radius: 20px;
+}
+
+#float{
+    background-color: #005344;
+    height: 18.1rem;
+    width: 18.1rem;
+    border: 1.4rem solid#000;
+    border-radius: 3.2rem;
+    position: relative;
+    top: -10rem;
+    left: -6.7rem;
+}
+
+.in-float{
+    background-color: #5a9d8c;
+    height: 9rem;
+    width: 11rem;
+    border-radius: 1.1rem;
+    position: relative;
+    left: 15rem;
+    top: 7rem;
+    padding: 1rem 1.2rem 0;
+}
+
+.in-float p{
+    background-color: inherit;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.in-float p:nth-of-type(2) {
+    font-size: 2.2rem;
+    font-weight: 450;
+    color: inherit;
+    background-color: inherit;
+}
+
+.flocom{
+    position: relative;
+    height: 15rem;
+    width: 7rem;
+    display: inline-block;
+    margin: -2px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.float3{
+    top: -16rem;
+    right: 15rem;
+}
+
+.float2{
+    top: -16rem;
+    right: 15rem;
+    /* background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
+    background: rgba(92, 92, 92, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.float1{
+    top: -16rem;
+    right: 15rem;
+    height: 10rem;
+}
+
+.dese-1{
+    position: absolute;
+    height: 137vh;
+    width: 7rem;
+    display: inline-block;
+    margin: -2px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    top: 5rem;
+    right: 15rem;
+}
+
+.dese-2{
+    right: 8rem;
+    background: rgba(92, 92, 92, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
