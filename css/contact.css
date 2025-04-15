@@ -19,3 +19,7 @@ textarea{
 .about{
     justify-content: space-around;
 }
+
+button{
+    margin: 1rem;
+}
