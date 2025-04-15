@@ -1,0 +1,67 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: white;
+
+}
+.logo img{
+    height: 2rem;
+    width: auto;
+    margin: 0.5 rem;
+}
+.Top div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 10px solid black; */
+    background-color: black;
+    height: 5rem;
+}
+.logo h1{
+    color: white;
+}
+.Top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.menu a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.name{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lang{
+    margin: 1rem;
+}
+.main div{
+    justify-content: center;
+}
+.right div{
+    align-items: right;
+}
