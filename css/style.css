@@ -72,7 +72,7 @@ nav{
     justify-content: center;
 }
 .page1{
-    background-color: black;
+    background-color: #101010;
     display: flex;
     flex-direction: row;
     height: 40rem;
@@ -98,11 +98,11 @@ nav{
 }
 .main{
      border-radius: 50%;
-     border: 2px solid black;
+     border: 2px solid #101010;
      box-shadow: -2px 2px 2px #287a65;
      height: 35rem;
      width: 35rem;
-     background-color: black;
+     background-color: #0d0d0d;
      display: flex;
      flex-direction: column;
      overflow: hidden;
@@ -118,7 +118,8 @@ nav{
     text-align: center;
 }
 .high {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    width: 20rem;
 }
 .details{
     background-color: black;
@@ -128,7 +129,9 @@ nav{
     height: 10rem;
 }
 .bank{
-    border: 5px solid red;
-    /* height: 4rem;  */
-    /* width: 4rem;  */
+    border: 2px solid black;
+     height: 6rem; 
+      width: 12rem; 
+      border-radius: 8%;
+      background-color: #287a65;
 }
