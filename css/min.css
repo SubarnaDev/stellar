@@ -1,0 +1,29 @@
+@media(max-width:500px){
+    .about{
+        margin: 3rem;
+    }
+    .design{
+        display: none;
+    }
+    input{
+        width: 15rem;
+    }
+    textarea{
+        width: 15rem;
+    }
+}
+
+@media(max-width:770px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .dese-1,.dese-2{
+        display: none;
+    }
+    .des1,.des2{
+        width: 25rem;
+    }
+    .des1{
+        margin-top: 2rem;
+    }
+}
