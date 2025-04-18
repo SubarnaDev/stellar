@@ -278,6 +278,7 @@ nav{
 
 .second{
     background-color: black;
+    /* overflow: hidden; */
 }
 .para-one{
     font-size: 2.5rem;
@@ -296,6 +297,7 @@ nav{
     margin: 0 12rem;
 }
 .box1{
+     overflow: hidden; 
     border: 2px solid #005545;
     height: 23rem;
     width: 21rem;
@@ -324,10 +326,12 @@ nav{
     border-radius: 50%;
 }
 .box3{
-    border: 2px solid white;
+     overflow: hidden; 
+    /* border: 2px solid white; */
     height: 23rem;
     width: 21rem;
     border-radius: 1.25rem;
+    background-color: #0f1312;
 }
 .box4{
     border: 2px solid white;
@@ -344,4 +348,115 @@ nav{
     font-size: 1.5rem;
     margin: 2rem;
     width: 21rem;
+}
+.b1{
+    /* overflow: hidden; */
+    /* text-overflow: hidden; */
+    border-radius: 50%;
+    border: 9px solid  #00febf;
+    /* border: 3px solid white; */
+    height: 6rem;
+    width: 6rem;
+    transform: translate(16rem,-1.5rem);
+    /* position : absolute;
+    left: 53vw;
+    top: 102vw; */
+}
+.b2{
+    border-radius: 50%;
+    border: 9px solid  #00febf;
+    height: 6rem;
+    width: 6rem;
+    position : absolute;
+    left: 40vw;
+    top: 109vw; 
+}
+.b3{
+    border-radius: 50%;
+    border: 10px solid  #00febf;
+    height: 15rem;
+    width: 15rem;
+    transform: translate(10rem,4rem);
+    /* position : absolute;
+    left: 45vw;
+    top: 118vw; */
+}
+.v1{
+    border-radius: 50%;
+    border: 10px solid  white;
+    height: 15rem;
+    width: 15rem;
+    transform: translate(-9rem,-5rem);
+    /* position : absolute;
+    left: 5vw; 
+    top: 90vw;  */
+
+}
+.m1{
+    height: 15rem;
+    width: 17rem;
+    border: 7px solid #00febf;
+    position: absolute;
+    left: 76vw;
+    top: 85vw;
+    transform: rotate(50deg);
+}
+.m2{
+    height: 15rem;
+    width: 20rem;
+    border: 7px solid #00febf;
+    position: absolute;
+    left: 73vw;
+    top: 85vw;
+    transform: rotate(50deg);
+
+}
+.stage{
+    background-color: black;
+    margin: 12rem;
+}
+.stagei{
+    font-size: 2rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    /* width: 0.2rem; */
+}
+.stageii{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+     margin: 0 1rem; 
+}
+.stage1{
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.stage2{
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.stage3{
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.stageii h1{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.stageii p{
+    font-size: 1.2rem;
 }
