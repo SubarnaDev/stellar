@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BasicPay+ – Stellar Wallet for the World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #ffffff, #eaf4ff);
+      color: #222;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5em;
+    }
+    .btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin: 1em 0;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1558b0;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+    }
+    .section {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    video {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+    .testimonial {
+      font-style: italic;
+      margin: 1em 0;
+      background: #f0f8ff;
+      padding: 20px;
+      border-left: 5px solid #1a73e8;
+      border-radius: 10px;
+    }
+    .personas {
+      text-align: left;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+    .personas select, .personas pre {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+    .personas pre {
+      background: #eef4ff;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith("hi")) alert("आप हिंदी में ऐप का उपयोग कर सकते हैं!");
+      else if (userLang.startsWith("es")) alert("¡Puedes usar la aplicación en español!");
+    });
+
+    function fillPersonaFlow(role) {
+      const exampleFlows = {
+        remittance: `🌍 Remittance Worker Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Fund using Friendbot\n4. Share public key with family\n5. Receive payment via QR code` ,
+        freelancer: `💼 Freelancer Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Request payment from client with QR\n4. Track balance & transactions\n5. Backup encrypted wallet` ,
+        ngo: `🤝 NGO Collector Flow:\n1. Generate wallet\n2. Turn on Donation Mode\n3. Print QR codes for events\n4. Monitor incoming donations\n5. Export records for accounting`
+      };
+      document.getElementById("persona-example").textContent = exampleFlows[role] || '';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>💫 BasicPay+</h1>
+      <p>A secure, multilingual Stellar wallet built for freelancers, NGOs, and underserved communities.</p>
+      <a href="#features" class="btn">🧭 Explore Features</a>
+      <br>
+      <a href="index.html" class="btn">🚀 Launch App</a>
+    </header>
+
+    <div class="personas">
+      <h3>🎭 Simulate User Story</h3>
+      <label for="persona-select">Choose a user type:</label>
+      <select id="persona-select" onchange="fillPersonaFlow(this.value)">
+        <option value="">-- Select Persona --</option>
+        <option value="remittance">🌍 Remittance Worker</option>
+        <option value="freelancer">💼 Freelancer</option>
+        <option value="ngo">🤝 NGO Collector</option>
+      </select>
+      <pre id="persona-example">Select a persona to view their flow...</pre>
+    </div>
+
+    <div id="features" class="features">
+      <div class="card">
+        <h3>🔐 Encrypted Wallets</h3>
+        <p>Generate, encrypt, and store Stellar wallets using AES-GCM in your browser.</p>
+      </div>
+      <div class="card">
+        <h3>📎 QR Payments</h3>
+        <p>Send or request payments instantly with QR codes. Includes donation mode.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Realtime Charts</h3>
+        <p>Track your balance history and access full transaction logs via Stellar Explorer.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI Assistant</h3>
+        <p>Ask BasicBot about wallet usage, features, and troubleshooting with Qroq AI.</p>
+      </div>
+      <div class="card">
+        <h3>💸 Microloans</h3>
+        <p>Send microloans with due dates, reminders, and status tracking for financial inclusion.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Multilingual + Offline</h3>
+        <p>Supports Hindi, Spanish, and English. Works even without internet via service worker.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🌍 Impact Focus</h2>
+      <p>Designed for global users — from gig workers to grassroots NGOs — BasicPay+ delivers financial tools with offline access, real-time alerts, and secure recovery options.</p>
+    </div>
+
+    <div class="section">
+      <h2>🗣 Testimonials</h2>
+      <div class="testimonial">"BasicPay+ gave our rural NGO a way to collect donations without needing bank accounts." – Priya, India</div>
+      <div class="testimonial">"The offline support helped me get paid even with unstable internet." – Juan, Colombia</div>
+    </div>
+
+    <div class="section">
+      <h2>🎥 See It in Action</h2>
+      <video controls poster="screenshot.jpg">
+        <source src="demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <footer>
+      Built with ❤️ using Stellar SDK • Chart.js • Firebase • WebCrypto • Qroq AI
+    </footer>
+  </div>
+</body>
+
+</html>
