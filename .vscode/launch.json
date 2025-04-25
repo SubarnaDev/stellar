@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/SUBARNA/AppData/Local/Temp/484d3de5-c978-44c7-bfa2-a77d3b303cf4_Assignment4_Array_C_Programs.zip.cf4",
+      "program": "c:/Users/SUBARNA/AppData/Local/Temp/484d3de5-c978-44c7-bfa2-a77d3b303cf4_Assignment4_Array_C_Programs.zip.cf4/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
