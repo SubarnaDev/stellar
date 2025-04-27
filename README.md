@@ -73,7 +73,7 @@ It enables instant Stellar wallet creation, secure transactions (even offline), 
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [To be added after recording]  
+- **Demo Video Link:** [[To be added after recording](https://youtu.be/xi2v4-q__CM)]  
 - **Pitch Deck / PPT Link:** [(https://docs.google.com/presentation/d/1BAMFCvA91swGcjKKElPoy6Vfd61AT-fM/edit?usp=sharing&ouid=110423483065433512850&rtpof=true&sd=true)]
 
 ---
