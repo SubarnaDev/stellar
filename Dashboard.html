@@ -2,53 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBORD</title>
-    <link rel="shortcut icon" href="temp/24px.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/min-nav.css">
-    <link rel="stylesheet" href="css/min.css">
-    <link rel="stylesheet" href="css/dashbord.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sync_alt" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith("hi")) alert("आप हिंदी में ऐप का उपयोग कर सकते हैं!");
-    else if (userLang.startsWith("es")) alert("¡Puedes usar la aplicación en español!");
-  });
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP</title>
+  <link rel="shortcut icon" href="app/24px.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-nav.css">
+  <link rel="stylesheet" href="css/min.css">
+  <link rel="stylesheet" href="css/dashbord.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sync_alt" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith("hi")) alert("आप हिंदी में ऐप का उपयोग कर सकते हैं!");
+      else if (userLang.startsWith("es")) alert("¡Puedes usar la aplicación en español!");
+    });
 
-  function fillPersonaFlow(role) {
-    const exampleFlows = {
-      remittance: `🌍 Remittance Worker Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Fund using Friendbot\n4. Share public key with family\n5. Receive payment via QR code` ,
-      freelancer: `💼 Freelancer Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Request payment from client with QR\n4. Track balance & transactions\n5. Backup encrypted wallet` ,
-      ngo: `🤝 NGO Collector Flow:\n1. Generate wallet\n2. Turn on Donation Mode\n3. Print QR codes for events\n4. Monitor incoming donations\n5. Export records for accounting`
-    };
-    document.getElementById("persona-example").textContent = exampleFlows[role] || '';
-  }
-</script>
-<script src="js/app.js"></script>
+    function fillPersonaFlow(role) {
+      const exampleFlows = {
+        remittance: `🌍 Remittance Worker Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Fund using Friendbot\n4. Share public key with family\n5. Receive payment via QR code`,
+        freelancer: `💼 Freelancer Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Request payment from client with QR\n4. Track balance & transactions\n5. Backup encrypted wallet`,
+        ngo: `🤝 NGO Collector Flow:\n1. Generate wallet\n2. Turn on Donation Mode\n3. Print QR codes for events\n4. Monitor incoming donations\n5. Export records for accounting`
+      };
+      document.getElementById("persona-example").textContent = exampleFlows[role] || '';
+    }
+  </script>
 </head>
+
 <body>
-    <header>
-      <nav>
+  <header>
+    <nav>
         <div class="Top">
             <div class="logo">
                 <img src="images/logo.png" alt="logo image">
                <div id="name">
-                <p>Stellar</p>
-                <h1> Dashboard</h1>
+                <!-- <p>Stellar</p> -->
+                <h1> BasicPay+</h1>
                </div>
             </div>
             <div class="lang">
@@ -59,7 +60,7 @@
         </div>
         <div class="menu">
             <a href="index.html">Home</a>
-            <a href="Dashboard.html">Wallet</a>
+            <a href="Dashboard.html">App</a>
             <a href="About.html">About</a>
             <a href="Contact.html">Contact us</a>
             <div class="profile">
@@ -81,15 +82,16 @@
               </ul>
           </div>
     </nav>
+</header>
   
-
+  <div class="container">
+    <header>
       <h1> BasicPay+</h1>
       <p>A secure, multilingual Stellar wallet built for freelancers, NGOs, and underserved communities.</p>
       <a href="#features" class="btn">🧭 Explore Features</a>
       <br>
-      <a href="app/" class="btn">🚀 Launch App</a>
+      <a href="app/index.html" class="btn">🚀 Launch App</a>
     </header>
-    <div class="container">
     <div class="personas">
       <h3>🎭 Simulate User Story</h3>
       <label for="persona-select">Choose a user type:</label>
@@ -131,17 +133,20 @@
 
     <div class="section">
       <h2>🌍 Impact Focus</h2>
-      <p>Designed for global users — from gig workers to grassroots NGOs — BasicPay+ delivers financial tools with offline access, real-time alerts, and secure recovery options.</p>
+      <p>Designed for global users — from gig workers to grassroots NGOs — BasicPay+ delivers financial tools with
+        offline access, real-time alerts, and secure recovery options.</p>
     </div>
     <div class="section">
       <h2>🌍 Check walkthrough</h2>
-      <a href="temp/demo-walkthrough.md">Demo Walkthrough</a>
+      <a href="app/demo-walkthrough.md">Demo Walkthrough</a>
     </div>
 
     <div class="section">
       <h2>🗣 Testimonials</h2>
-      <div class="testimonial">"BasicPay+ gave our rural NGO a way to collect donations without needing bank accounts." – Priya, India</div>
-      <div class="testimonial">"The offline support helped me get paid even with unstable internet." – Juan, Colombia</div>
+      <div class="testimonial">"BasicPay+ gave our rural NGO a way to collect donations without needing bank accounts."
+        – Priya, India</div>
+      <div class="testimonial">"The offline support helped me get paid even with unstable internet." – Juan, Colombia
+      </div>
     </div>
 
     <div class="section">
@@ -156,6 +161,8 @@
       Built with ❤️ using Stellar SDK • Chart.js • Firebase • WebCrypto • Qroq AI
     </footer>
   </div>
+  <script src="js/app.js"></script>
+
 </body>
 
 </html>

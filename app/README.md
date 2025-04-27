@@ -1,115 +1,108 @@
-# 💫 BasicPay+ — Stellar Wallet for Fast, Smart, and Secure Payments
+![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-**Built for HACKHAZARDS '25 — Blockchain Innovation Hackathon**
+# 🚀 BasicPay+
 
-BasicPay+ is a fast, lightweight Stellar wallet built for real-world impact — enabling freelancers, NGOs, and unbanked users to send, request, and manage XLM payments securely and offline. Whether you're scheduling microloans, sharing QR-based requests, or syncing across devices — BasicPay+ makes it effortless.
-
----
-
-## 🌟 Features
-
-| Category                | Features                                                                 |
-|-------------------------|--------------------------------------------------------------------------|
-| 🔐 Wallet Management     | Generate, encrypt, sync, and restore wallets (AES-GCM + Firebase)        |
-| 💸 Payments              | Instant XLM transfers with memos and offline queuing                    |
-| ⏳ Recurring Transfers   | Schedule automated payouts for subscriptions or salaries                 |
-| 📲 QR Code Requests      | Generate QR codes for remittance or donation collection                 |
-| 💸 Microloans            | Send loans with due dates and repayment tracking                        |
-| 🎁 Donation Mode         | Create donation QR for NGO and personal campaigns                       |
-| 📊 Charts & History      | Track balance trends and full payment history with export               |
-| 📡 Real-Time Monitoring  | Live updates via Stellar account streaming                              |
-| ☁️ Firebase Sync         | Backup and restore encrypted wallets across devices                     |
-| 📤 Import/Export         | Local wallet backup + recovery via JSON                                 |
-| 🌐 Offline Support       | PWA with install + offline transaction queue                            |
-| 🤖 AI Assistant          | Ask BasicBot anything — Qroq AI integrated                              |
-| 🗣 Multilingual UI       | English, Hindi, and Spanish included                                    |
-| 🌙 Dark Mode             | Clean and accessible UI with theme toggle                               |
+> Empowering Global Payments for Freelancers, NGOs, and Underserved Communities via Stellar Blockchain.
 
 ---
 
-## 🚀 Live Demo
+## 📌 Problem Statement
 
-🌐 Try it now: [https://temp-kappa-beige.vercel.app/](https://temp-kappa-beige.vercel.app/)  
-_No signup required. Fund via Friendbot on Stellar Testnet._
-
----
-
-## 🛠 Tech Stack
-
-- 🌌 Stellar SDK (Testnet)
-- 🔐 WebCrypto API (AES-GCM)
-- ☁️ Firebase Firestore (Encrypted sync)
-- 📊 Chart.js + QRCode.js
-- 🤖 Qroq AI API (via Vercel Function)
-- ⚙️ PWA with Service Worker
-- 🌍 HTML + CSS + Vanilla JS
+**Problem Statement 6 – Redefining Digital Payments for Underserved Communities**
 
 ---
 
-## 📂 Project Structure
+## 🎯 Objective
 
-```
-📦 basicpay-plus/
-├── index.html
-├── style.css
-├── script.js
-├── utils.js
-├── manifest.json
-├── service-worker.js
-├── api/
-│   └── qroq.js        # Secure serverless Qroq AI endpoint
-```
+BasicPay+ solves the problem of limited access to fast, affordable, and secure digital payment systems, especially for freelancers, NGOs, migrant workers, and remote communities.  
+It enables instant Stellar wallet creation, secure transactions (even offline), and supports multilingual access to ensure financial empowerment worldwide.
 
 ---
 
-## 🤖 Qroq AI Integration
+## 🧠 Team & Approach
 
-Ask wallet questions directly in-app:
+### Team Name:  
+**PHOENIX**
 
-```
-POST /api/qroq
-{
-  "prompt": "How do I send a microloan?"
-}
-```
+### Team Members:  
+- Subarna Adhikari ([GitHub](https://github.com/SubarnaDev) / [LinkedIn](https://www.linkedin.com/in/subarnaadhikari/) / Full Stack Developer)
 
-Secure your API key with:
-```
-QROQ_KEY = your_api_key_here
-```
+- Swagata Samanta ([GitHub](https://github.com/Code-with-Swagata) / [LinkedIn](https://www.linkedin.com/in/swagata-samanta-a9918b317) / Frontend Developer)
 
----
+- Dipannita Biswas ([GitHub](https://github.com/DIPANNITABISWAS07) / [LinkedIn](https://www.linkedin.com/in/dipannita-biswas-2b0a81330) / Frontend Developer)
 
-## 💡 Real-World Use Cases
+- Akas Jana ([GitHub](https://github.com/Akash-06-A) / [LinkedIn](https://www.linkedin.com/in/akash-jana-aa9344330/) / UI/UX Designer)
 
-- **💼 Gig Workers & Freelancers**: Schedule recurring income in XLM  
-- **🌍 Remittance**: Send funds globally with near-zero fees  
-- **🤝 NGO Campaigns**: Accept donations via scannable QR codes  
-- **📦 Offline Payments**: Queue and auto-send when reconnected  
-- **📘 Microloans**: Enable community lending with reminders & tracking
+### Your Approach:  
+- Chose this problem to address real-world challenges faced by freelancers and NGOs in developing regions.
+- Key challenges included implementing secure wallet backup, offline transaction queuing, and multilingual support.
+- Pivoted to include a microloan management system after understanding local community financial needs.
+- Integrated AI assistance (Qroq API) to make the app more accessible for first-time crypto users.
 
 ---
 
-## 📦 Installation (Optional)
+## 🛠️ Tech Stack
 
-To run locally:
+### Core Technologies Used:
+- Frontend: HTML, CSS, JavaScript (Vanilla JS, PWA architecture)
+- Backend: Firebase (Authentication, Cloud Storage)
+- Database: Firebase Firestore
+- APIs: Stellar SDK, Qroq AI API
+- Hosting: Firebase Hosting / Vercel (Planned)
+
+### Sponsor Technologies Used:
+- ✅ **Groq:** _Integrated Groq-powered AI Assistant (Qroq API) for user guidance_  
+- ✅ **Stellar:** _Used Stellar Blockchain for wallet generation, payments, and balance tracking_
+
+---
+
+## ✨ Key Features
+
+- ✅ Instant Stellar Wallet Generation with Password Encryption  
+- ✅ Secure Wallet Backup to Cloud (Firebase)  
+- ✅ Real-Time Balance Monitoring and Payments  
+- ✅ Offline Mode — Queue Transactions and Sync Later  
+- ✅ QR Code Payment Requests  
+- ✅ Scheduled Recurring Transfers  
+- ✅ Microloan Management System  
+- ✅ Multilingual Support (English, Hindi, Spanish)  
+- ✅ Installable PWA for Mobile and Desktop  
+- ✅ Built-in AI Assistant for User Help (Groq API)
+
+---
+
+## 📽️ Demo & Deliverables
+
+- **Demo Video Link:** [To be added after recording]  
+- **Pitch Deck / PPT Link:** [(https://docs.google.com/presentation/d/1BAMFCvA91swGcjKKElPoy6Vfd61AT-fM/edit?usp=sharing&ouid=110423483065433512850&rtpof=true&sd=true)]
+
+---
+
+## ✅ Tasks & Bonus Checklist
+
+- [✅] **Mandatory Task:** Followed 2 social channels and filled form  
+- [✅] **Bonus Task 1:** Shared badges and filled form (+2 points)  
+- [✅] **Bonus Task 2:** Signed up for Sprint.dev and filled form (+3 points)
+
+---
+
+## 🧪 How to Run the Project
+
+### Requirements:
+- Node.js (for local server)  
+- Firebase Project setup (Authentication + Firestore)  
+- Stellar SDK Access  
+- Qroq API Key  
+- Internet connection (for syncing — app works offline too)
+
+### Local Setup:
 ```bash
-git clone https://github.com/your-username/basicpay-plus.git
-cd basicpay-plus
+# Clone the repo
+git clone https://github.com/SubarnaDev/stellar.git
+
+# Install dependencies (if using package bundler)
+
 npm install
-vercel dev  # or serve as static site
-```
 
----
-
-## 📢 Credits
-
-- Built by: [Your Name / Team Name]
-- For: **HACKHAZARDS '25**
-- Powered by: [Stellar](https://www.stellar.org/), [Qroq](https://qroq.ai/), [Firebase](https://firebase.google.com/), [Vercel](https://vercel.com)
-
----
-
-## 📜 License
-
-MIT License — Free to use, fork, and remix. Give credit where due 💖
+# Start development server
+npm run dev

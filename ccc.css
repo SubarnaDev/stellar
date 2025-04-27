@@ -1,0 +1,12 @@
+#cc{
+    display: none;
+}
+@media(max-width:800px){
+    #cc{
+        display: block;
+
+    }
+    #ccc{
+        display: none;
+    }
+}

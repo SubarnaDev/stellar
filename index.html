@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="shortcut icon" href="temp/24px.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="app/24px.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/min-nav.css">
+    <link rel="stylesheet" href="css/min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
     <link rel="stylesheet"
@@ -22,18 +23,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/index_respo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/min-nav.css">
+        <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/dashbord.css">
+    
+    <link rel="stylesheet" href="ccc.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("hi")) alert("आप हिंदी में ऐप का उपयोग कर सकते हैं!");
+            else if (userLang.startsWith("es")) alert("¡Puedes usar la aplicación en español!");
+        });
+
+        function fillPersonaFlow(role) {
+            const exampleFlows = {
+                remittance: `🌍 Remittance Worker Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Fund using Friendbot\n4. Share public key with family\n5. Receive payment via QR code`,
+                freelancer: `💼 Freelancer Flow:\n1. Generate wallet\n2. Encrypt & save\n3. Request payment from client with QR\n4. Track balance & transactions\n5. Backup encrypted wallet`,
+                ngo: `🤝 NGO Collector Flow:\n1. Generate wallet\n2. Turn on Donation Mode\n3. Print QR codes for events\n4. Monitor incoming donations\n5. Export records for accounting`
+            };
+            document.getElementById("persona-example").textContent = exampleFlows[role] || '';
+        }
+    </script>
+
 </head>
 
 <body>
+    <section id="ccc">
     <header>
         <nav>
             <div class="Top">
                 <div class="logo">
                     <img src="images/logo.png" alt="logo image">
                     <div id="name">
-                        <p>Stellar</p>
-                        <h1> Dashboard</h1>
+                        <!-- <p>Stellar</p> -->
+                        <h1> BasicPay+</h1>
                     </div>
                 </div>
                 <div class="lang">
@@ -275,11 +302,11 @@
                 </div>
                 <div class="last1">
                     <h1>Logoipsum</h1>
-                    <p >The first free end-to-end analytics service for the site,
+                    <p>The first free end-to-end analytics service for the site,
                         designed to work with enterprises of various levels and
                         business segments</p>
                     <h5> More about us <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i></h5>
-            
+
                 </div>
             </div>
             <div class="last-nav2">
@@ -289,10 +316,10 @@
                 <a href="Dashboard.html">Dashboard</a>
             </div>
         </nav>
-        <div >
+        <div>
 
         </div>
-        <div >
+        <div>
 
         </div>
         <div class="last-part">
@@ -335,6 +362,154 @@
         </div>
     </footer>
     <script src="js/app.js"></script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="cc">
+    <header>
+        <nav>
+            <div class="Top">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo image">
+                    <div id="name">
+                        <!-- <p>Stellar</p> -->
+                        <h1> BasicPay+</h1>
+                    </div>
+                </div>
+                <div class="lang">
+
+                    <option value="top_down">En </option>
+                    &nbsp;<i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="Dashboard.html">App</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact us</a>
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+        </nav>
+        <nav class="min">
+            <div id="burger-menu">
+                <span></span>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Dashboard.html">App</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1> BasicPay+</h1>
+            <p>A secure, multilingual Stellar wallet built for freelancers, NGOs, and underserved communities.</p>
+            <a href="#features" class="btn">🧭 Explore Features</a>
+            <br>
+            <a href="app/index.html" class="btn">🚀 Launch App</a>
+        </header>
+        <div class="personas">
+            <h3>🎭 Simulate User Story</h3>
+            <label for="persona-select">Choose a user type:</label>
+            <select id="persona-select" onchange="fillPersonaFlow(this.value)">
+                <option value="">-- Select Persona --</option>
+                <option value="remittance">🌍 Remittance Worker</option>
+                <option value="freelancer">💼 Freelancer</option>
+                <option value="ngo">🤝 NGO Collector</option>
+            </select>
+            <pre id="persona-example">Select a persona to view their flow...</pre>
+        </div>
+
+        <div id="features" class="features">
+            <div class="card">
+                <h3>🔐 Encrypted Wallets</h3>
+                <p>Generate, encrypt, and store Stellar wallets using AES-GCM in your browser.</p>
+            </div>
+            <div class="card">
+                <h3>📎 QR Payments</h3>
+                <p>Send or request payments instantly with QR codes. Includes donation mode.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Realtime Charts</h3>
+                <p>Track your balance history and access full transaction logs via Stellar Explorer.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 AI Assistant</h3>
+                <p>Ask BasicBot about wallet usage, features, and troubleshooting with Qroq AI.</p>
+            </div>
+            <div class="card">
+                <h3>💸 Microloans</h3>
+                <p>Send microloans with due dates, reminders, and status tracking for financial inclusion.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Multilingual + Offline</h3>
+                <p>Supports Hindi, Spanish, and English. Works even without internet via service worker.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌍 Impact Focus</h2>
+            <p>Designed for global users — from gig workers to grassroots NGOs — BasicPay+ delivers financial tools with
+                offline access, real-time alerts, and secure recovery options.</p>
+        </div>
+        <div class="section">
+            <h2>🌍 Check walkthrough</h2>
+            <a href="app/demo-walkthrough.md">Demo Walkthrough</a>
+        </div>
+
+        <div class="section">
+            <h2>🗣 Testimonials</h2>
+            <div class="testimonial">"BasicPay+ gave our rural NGO a way to collect donations without needing bank
+                accounts."
+                – Priya, India</div>
+            <div class="testimonial">"The offline support helped me get paid even with unstable internet." – Juan,
+                Colombia
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎥 See It in Action</h2>
+            <video controls poster="screenshot.jpg">
+                <source src="demo-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <footer>
+            Built with ❤️ using Stellar SDK • Chart.js • Firebase • WebCrypto • Qroq AI
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+
+</section>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
